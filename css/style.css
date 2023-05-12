@@ -1,0 +1,587 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  transition: 0.2s linear;
+  border: none;
+  outline: none;
+  overflow-x: none;
+}
+
+.main_color{
+  color: #e6b641;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+
+.nav {
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.logo img{
+  width: 22rem;
+  cursor: pointer;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right img{
+  width: 17px;
+  cursor: pointer;
+}
+
+.right span{
+  margin: 0 2rem 0 1rem;
+  font-size: 16px;
+}
+
+
+
+
+.contact_btn{
+  background: #e6b641;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 16px 28px;
+    transition: all .3s linear;
+    color: white;
+    font-size: 1.8rem;
+}
+
+
+.main_carousel{  
+    background: url('https://haizen.web.app/static/media/hero_slider_2.d82957c043ce4509b645.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .main_carousel h1{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: white;
+    font-weight: 700;
+    font-size: 56px;
+  }
+
+  .running_no{
+    padding: 4.5rem 0;
+  }
+
+  .box_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 156px;
+    width: 172px;
+    margin: 0 1.5rem;
+    background: #fafafa;
+    cursor: pointer;
+
+    text-align: center;
+  }
+
+  .box:hover{
+    box-shadow: 0px 0px 18px 6px #e0d9d9;
+  }
+
+
+  /* -------------- about ------------- */
+
+  .about{
+    padding: 4rem 0;
+  }
+
+  .about-img img{
+   height: 467px;
+  }
+
+  .about-right h1{
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .about-right h1:after {
+    width: 50%;
+}
+.about-right h1:after {
+    border: 1px solid #e5b641;
+    content: "";
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    width: 60%;
+}
+
+  .para-box{
+    padding: 1.5rem 2.5rem;
+  }
+
+  .para-box p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+
+  /* ---------------- mission section ---------------- */
+
+
+  .mission{
+    padding: 10rem 0;
+    background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
+    background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  }
+
+  .mission-img img{
+   height: 467px;
+  }
+
+  .mission-left{
+    padding: 4rem;
+  }
+
+  .mission-left h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+  }
+
+  .about-para-box{
+    padding: 1.5rem 2.5rem;
+  }
+
+  .about-para-box p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: white;
+  }
+
+  .mission-left h1:after {
+    width: 20%;
+    
+}
+.mission-left h1:after {
+    border: 1px solid #e5b641;
+    content: "";
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    width: 29%;
+}
+
+.about-img{
+  padding: 4rem;
+}
+
+/* ----------------------- Values ------------------ */
+
+.values{
+  padding: 8rem 0;
+}
+
+.values .container h1{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  
+}
+
+.vcard_container{
+  padding: 3rem 0;
+}
+
+.vcard{
+  padding: 3rem ;
+  max-width: 367px;
+  height: 100%;
+  border-radius: 1.2rem;
+}
+
+.vcard:hover{
+  box-shadow: 0px 0px 18px 6px #e0d9d9;
+  transform: scale(1.08);
+}
+
+
+
+.vcard img{
+  width: 86px;
+  margin: 1rem 0;
+}
+
+.vcard h2{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+}
+.vcard h3{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+.vcard p{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+
+/* --------------- quote ---------------- */
+
+.quote{
+  height: 70vh;
+  width: 100%;
+  background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-body p{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 4rem;
+  border: 1px solid #e5b641;
+ 
+}
+
+
+/* ---------------- Team section ---------------- */
+
+
+.team{
+  padding: 6rem 0;
+}
+
+.team-img img{
+ height: 467px;
+}
+
+.team-left{
+  padding: 4rem;
+}
+
+.team-left h1{
+  font-size: 48px;
+  font-weight: 700;
+  position: relative;
+}
+
+.team-para-box{
+  padding: 1.5rem 2.5rem;
+}
+
+.team-para-box p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.team-left h1:after {
+  width: 20%;
+  
+}
+.team-left h1:after {
+  border: 1px solid #e5b641;
+  content: "";
+  margin-left: 10px;
+  position: absolute;
+  top: 53%;
+  width: 29%;
+}
+
+.team-img{
+padding: 4rem;
+}
+
+
+.team-para-box{
+  padding: 1.5rem 2.5rem;
+}
+
+.team-para-box p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+
+/* ---------------- service -------------- */
+
+
+/* ------------------ Projects ---------------- */
+
+.project{
+  padding: 6rem 0;
+  
+}
+
+
+.project_left,
+.project_right{
+  padding: 4rem;
+}
+
+.project_left h1{
+  font-size: 48px;
+  font-weight: 700;
+  position: relative;
+}
+
+.project_left h2,
+.project_right h2{
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.project_left h3,
+.project_right h3{
+  font-size: 2rem;
+  font-weight: 400;
+  
+}
+
+.project_left_img,.project_left_img a,
+.project_right_img,.project_right_img a{
+  margin: 3rem 0;
+}
+
+
+.project_left h1:after {
+  width: 20%;
+  
+}
+.project_left h1:after {
+  border: 1px solid #e5b641;
+  content: "";
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  width: 29%;
+}
+
+
+/* ----------------- operate left==right -------------- */
+
+
+.operate{
+  padding: 7rem 0;
+  background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat ;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.operate-img img{
+ height: 54.4rem;
+ width: 100%;
+}
+
+.operate-left{
+  padding: 4rem;
+  margin-top: 2.5rem;
+}
+
+
+
+.operate-left h1{
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+}
+
+.operate-left h2{
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: white;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.operate-para-box{
+  margin-top: 4rem;
+}
+
+
+
+.operate-para-box p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  color: white;
+}
+
+
+.opearte-img{
+padding: 4rem;
+}
+
+.list{
+  display: flex;
+  align-items: center; 
+  
+}
+
+.list_one{
+  margin-right: 6rem;
+}
+
+
+.ul li{
+  color: white;
+  list-style: none;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+
+/* ---------------- contact ----------- */
+
+.contact{
+  height: 70vh;
+  width: 100%;
+  background: url('https://haizen.web.app/static/media/conatct_us.c17be969b7572cb572fb.png') ;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_box{
+  background: rgba(0,0,0,.6);
+  border-radius: 15px;
+  padding: 32px 18px;
+}
+
+.contact_box h1{
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.input_div{
+  width: 237px;
+  height: 47px;
+  margin: 1.5rem 0;
+}
+
+.input{
+  border: 2px solid rgb(117, 114, 114);
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  padding: 0.2rem 1rem;
+  font-size: 1.8rem;
+  color: rgb(194, 186, 186);
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 4px;
+
+}
+
+.send_btn{
+  display: flex;
+  justify-content: center;
+}
+
+.send_now{
+  background: #e6b641;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 16px 60px;
+    transition: all .3s linear;
+    color: white;
+    font-size: 1.8rem;
+}
+
+/* ------------------ footer ---------------- */
+
+.footer{
+  background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.footer p{
+  margin-top: 1rem;
+    color: white;
+  font-size: 16px;
+   
+    font-weight: 400;
+    line-height: 160%;
+
+
+}
+
+.line{
+  border: 1px solid #e6b641;
+}
+
+.footer_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer h3{
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  align-items:center;
+  
+}
+
+
+
+
+.phone{
+  color: white;
+  list-style: none;
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+}

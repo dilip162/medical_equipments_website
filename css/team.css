@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    transition: 0.2s linear;
+    border: none;
+    outline: none;
+    overflow-x: none;
+  }
+  
+  .main_color{
+    color: #e6b641;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+   /* ----------- about section starts ------------- */
+
+   .service_first{  
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url('https://haizen.web.app/static/media/serivehero.988b1df09f1e9d67d5d3.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    width: 100%;
+  }
+
+  .service_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service_text_container{
+    
+    width: 60%;
+  }
+
+  .service_text_container h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+
+  .service_text_container p{
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  /* ------------- Team Cards sections -------------- */
+
+  .team_cards{
+    padding: 10rem 0;
+  }
+
+  .tcard_container{
+    padding: 1.5rem 3rem;
+    border: 1px solid black;
+  }
+
+  .tcard_container h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .tcard_container p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+  .icons span{
+    padding: 2rem;
+    background-color: #e6b641;
+    border-radius: 50%;
+    
+  }
+
+  .icons span i{
+    /* font-size: 1.8rem; */
+  }

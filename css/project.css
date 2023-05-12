@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    transition: 0.2s linear;
+    border: none;
+    outline: none;
+    overflow-x: none;
+  }
+  
+  .main_color{
+    color: #e6b641;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+   /* ----------- about section starts ------------- */
+
+   .service_first{  
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url('https://haizen.web.app/static/media/serivehero.988b1df09f1e9d67d5d3.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    width: 100%;
+  }
+
+  .service_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service_text_container{
+    
+    width: 60%;
+  }
+
+  .service_text_container h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+
+  .service_text_container p{
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+
+  /* -------------------- Projects Showcase ---------- */
+
+  .projects{
+
+    padding: 5rem 0;
+  }
+
+  .projects_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 70%;
+    
+  }
+
+  .one_img_container{
+    
+    background: url('https://haizen.web.app/static/media/project1.a185a9fddeb5fa53e6a0.webp') no-repeat;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    border-radius: 1rem;
+    margin: 3rem 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+  }
+
+  .inner_text{
+    backdrop-filter: blur(4px);
+    background: hsla(0,0%,100%,.81);
+    border-radius: 2px;
+    padding: 20px 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .inner_text span{
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  .one_img_container img{
+    width: 100%;
+  }
+  
+  .one h1{
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  .one h2{
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 2.2rem;
+  }
+
+  .two{
+    background: url('https://haizen.web.app/static/media/sidra_bg.ecc01c50d28975988903.webp');
+    background-attachment: fixed;
+  }
+  .three{
+    background: url('https://haizen.web.app/static/media/project3.73aa4490522b16e76d40.png');
+    background-attachment: fixed;
+  }
+  .four{
+    background: url('https://haizen.web.app/static/media/project4.241546abc1b978cf4be1.webp');
+    background-attachment: fixed;
+  }
+  .five{
+    background: url('https://haizen.web.app/static/media/project5.d511c669dc396b3f7a0c.png');
+    background-attachment: fixed;
+  }
+  .six{
+    background: url('https://haizen.web.app/static/media/project6.f941c99538f12fca2211.png');
+    background-attachment: fixed;
+  }

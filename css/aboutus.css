@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    transition: 0.2s linear;
+    border: none;
+    outline: none;
+    overflow-x: none;
+  }
+  
+  .main_color{
+    color: #e6b641;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+  /* ----------- about section starts ------------- */
+
+  .about_first{  
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url('https://haizen.web.app/static/media/hero_slider_2.d82957c043ce4509b645.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    width: 100%;
+  }
+
+  .about_text_container h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+
+  .about_text_container p{
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+  }
+
+
+  /* ------------------ Who ------------------ */
+
+  .who{
+    padding: 4rem 0 10rem 0;
+  }
+
+  .who_container h1{
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+  .para_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .para{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 1rem;
+  }
+
+  .about_we_are{
+    max-width: 930px;
+  }
+
