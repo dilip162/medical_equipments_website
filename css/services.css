@@ -10,6 +10,9 @@
   }
   
   .main_color{
+    color: #800000;
+  }
+  .secondry_color{
     color: #e6b641;
   }
   
@@ -29,6 +32,7 @@
     justify-content: center;
     height: 55vh;
     width: 100%;
+    margin-top: 8rem;
   }
 
   .service_container{
@@ -43,7 +47,7 @@
   }
 
   .service_text_container h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     color: white;
     position: relative;
@@ -69,7 +73,7 @@
 
   .projectc-img{
     padding-left: 8rem;
-    max-width: 480px;
+    max-width: 48rem;
   }
 
   .projectc-right{
@@ -77,13 +81,13 @@
   }
 
  .projectc-right h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     
   }
 
   .pc-para-box p{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 160%;
     margin: 2rem 0;
@@ -100,8 +104,8 @@
   .link-btn{
     background: #ececec;
     color: #000;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 1rem;
+    border-radius: 4rem;
     cursor: auto!important;
     display: inline-block;
     font-size: 1.6rem;
@@ -122,7 +126,7 @@
 
   .planning-img{
     padding-right: 8rem;
-    max-width: 480px;
+    max-width: 48rem;
   }
 
   .planning_left_container{
@@ -136,14 +140,14 @@
   }
 
  .planning-left h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     color: white;
     
   }
 
   .planning-para-box p{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 160%;
     margin: 2rem 0;
@@ -161,8 +165,8 @@
   .link-btns{
     background: #353535;
     color: #fff;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 1rem;
+    border-radius: .4rem;
     cursor: auto!important;
     display: inline-block;
     font-size: 1.6rem;
@@ -180,7 +184,7 @@
 
   .facility-img{
     padding-left: 10rem;
-    max-width: 480px;
+    max-width: 48rem;
   }
 
   /* .facility-right{
@@ -188,13 +192,13 @@
   } */
 
  .facility-right h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     
   }
 
   .pc-para-box p{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 160%;
     margin: 2rem 0;
@@ -211,8 +215,8 @@
   .link-btn{
     background: #ececec;
     color: #000;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 1rem;
+    border-radius: 0.4rem;
     cursor: auto!important;
     display: inline-block;
     font-size: 1.6rem;
@@ -233,7 +237,7 @@
 
   .comission-img{
     padding-left: 6rem;
-    max-width: 480px;
+    max-width: 48rem;
   }
 
   .comission_left_container{
@@ -247,14 +251,14 @@
   }
 
  .comission-left h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     color: white;
     
   }
 
   .comission-para-box p{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 160%;
     margin: 2rem 0;
@@ -272,8 +276,8 @@
   .link-btns{
     background: #353535;
     color: #fff;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 1rem;
+    border-radius: 0.4rem;
     cursor: auto!important;
     display: inline-block;
     font-size: 1.6rem;

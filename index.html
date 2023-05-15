@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Medical</title>
+    <title>Pro Medical | Service & Trading</title>
+    <link rel="shortcut icon" href="/pics/rgblogo.png" type="image/x-icon">
 
     <!-- ----------- Bootstrap Css ---------------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+    <!-- ------------ Swiper Css ----------------- -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
     <!-- ---------- Custom Css ----------------------------- -->
     <link rel="stylesheet" href="/css/style.css">
@@ -16,22 +20,31 @@
 
 <!-- -----------navbar starts-------------- -->
 
-
-    <div class="header">
+    <div class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <div class="logo">
-                    <img src="/pics/logo.jpeg" alt="">
+                    <a href="/index.html"><img src="/pics/newlogo.png" alt=""></a>
                 </div>
 
                 <div class="right">
                     <div class="menu">
                         
-                            <img src="	https://haizen.web.app/static/media/nav_manu.ba58db65021572e251b248080e90bf46.svg" alt="">
-                            <span>Menu</span>
-                    </div>
+                           <div class="menu_items">
+                                <img class="menu_img" src="	https://haizen.web.app/static/media/nav_manu.ba58db65021572e251b248080e90bf46.svg" alt="">
+                                <ul class="menu_list">
+                                    <a href="/index.html">Home</a>
+                                    <a href="/aboutus.html">About Us</a>
+                                    <a href="/services.html">Services</a>
+                                    <a href="/projects.html">Projects</a>
+                                    <a href="team.html">Team</a>
+                                    <a href="values.html">Our Values</a>
+                                </ul>
+                           </div>
+                        </div>
+                        <div class="menu_logo_text">Menu</div>
 
-                    <a href="#" class="contact_btn">Contact Us</a>
+                    <a href="#contact" class="contact_btn">Contact Us</a>
                 </div>
             </nav>
         </div>
@@ -41,10 +54,32 @@
 
 <!-- --------------- Carousel section starts ---------------- -->
 
-<section class="main_carousel">
 
-    <h1>We securing <span class="main_color">health &<br>safety</span> of our communities</h1>    
-</section>
+<div class="hero_carousel" id="hero_carousel">
+    <h1 class="main_heading">We securing <span class="secondry_color">health &<br>safety</span> of our communities</h1>
+    
+    <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+            <img src="https://haizen.web.app/static/media/homePage_hero.8fc0b24514023279e10c.webp" class="carousel_img" alt="...">            
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="/pics/carousel_img.png" class="carousel_img" alt="...">
+        </div>
+
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
 
 
 <!-- --------------- Carousel section end ---------------- -->
@@ -54,19 +89,19 @@
 <section class="running_no">
     <div class="container box_container">
         <div class="box">
-            <h1>40+</h1>
+            <h1 class="num">40+</h1>
             <h3>Projects</h3>
         </div>
         <div class="box">
-            <h1>110+</h1>
+            <h1 class="num">110+</h1>
             <h3>Customers</h3>
         </div>
         <div class="box">
-            <h1>60k+</h1>
+            <h1 class="num num3">60k+</h1>
             <h3>Reviews</h3>
         </div>
         <div class="box">
-            <h1>16k+</h1>
+            <h1 class="num" >16k+</h1>
             <h3>5 star rate</h3>
         </div>
     </div>
@@ -80,7 +115,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 about-img">
-                <img src="https://haizen.web.app/static/media/home_about_img.efa2f489c1d22f3de25d.webp" alt="">
+                <img src="/pics/building.jpg" alt="">
             </div>
     
             <div class="col-md-6 about-right">
@@ -136,7 +171,7 @@
             </div>
 
             <div class="col-md-6 about-img">
-                <img src="https://haizen.web.app/static/media/mission-img.d5e3a787c794feb1ded2.png" alt="">
+                <img src="pics/p4.png" alt="">
             </div>
         </div>
     </div>
@@ -219,7 +254,7 @@
             </div>
 
             <div class="col-md-6 team-img">
-                <img src="https://haizen.web.app/static/media/team-img.4ec11f5ba85b45a157ad.png" alt="">
+                <img src="/pics/image.png" alt="">
             </div>
         </div>
     </div>
@@ -231,6 +266,111 @@
 <!-- -------------------- service section starts ------------------- -->
 
 
+<!-- ############################ -->
+
+<section class="services"> 
+    <div class="container">
+        <div class="row service_container">
+            <div class="col-md-4 service_main_heading">
+                <h1>Services</h1>
+            </div>
+            <div class="col-md-6 service_para">
+                <p>Our expertise combines integrated capabilities purposed to support the construction, expansion, and renovation of healthcare facilities. Ranging from initial planning and designing to engineering and optimization, we provide extensive services that meet project needs in every stage.</p>
+            </div>
+        </div>
+    </div>   
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/pics/s1.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Project Conceptualization</h2>
+                            <p class="description">We initiate projects based on exhaustive analyses that reveal opportunities and anticipate challenges.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/pics/s2.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Architectural Planning</h2>
+                            <p class="description">We develop facilities informed by the distinct needs of the field while ensuring adaptability to meet future demands.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/pics/s3.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Facility Planning & Design</h2>
+                            <p class="description">We design sophisticated spaces that promote healing through thoughtful layouts and fittings.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/pics/s1.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Project Conceptualization</h2>
+                            <p class="description">We initiate projects based on exhaustive analyses that reveal opportunities and anticipate challenges.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/pics/s2.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Architectural Planning</h2>
+                            <p class="description">We develop facilities informed by the distinct needs of the field while ensuring adaptability to meet future demands.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/pics/s3.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Facility Planning & Design</h2>
+                            <p class="description">We design sophisticated spaces that promote healing through thoughtful layouts and fittings.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>     
+</section>
+
+
+<!-- ############################ -->
 
 <!-- -------------------- service section ends ------------------- -->
 
@@ -280,7 +420,7 @@
         <div class="row">            
             
             <div class="col-md-6 operate-img">
-                <img src="https://haizen.web.app/static/media/africamap.781477a17d3c8ecd3010b4a4dda348a6.svg" alt="">
+                <img src="/pics/africa-gc1875b574_640.png" alt="">
             </div>
 
             <div class="col-md-6 operate-left">
@@ -320,10 +460,11 @@
 
 <!-- -------------------- contact section starts ------------------- -->
 
-<section class="contact">
+<section class="contact" id="contact">
     <div class="contact_box">
         <h1>Contact Us</h1>
-       <div class="row">
+       <form action="">
+        <div class="row">
             <div class="col-md-6 input_div">
                 <input type="text" class="input" placeholder="First name">
             </div>
@@ -342,6 +483,7 @@
        <div class="send_btn">
         <a href="#" class="contact_btn send_now">Send now</a>
        </div>
+       </form>
     </div>
 </section>
 
@@ -353,16 +495,20 @@
     <div class="container">
        <div class="row footer_row">
             <div class="footer_left col-md-3 logo">
-                <img src="/pics/logo.jpeg" alt="">
+                <img src="/pics/newlogo.png" alt="">
                 <p>A shared purpose inspires every single member of our collaborative force</p>
             </div>
             <div class="footer_right col-md-4 ">
                 <div class="details">
                     <div class="details_left">
-                        <div class="phone">+1-312-788-8476</div>
-                        <div class="phone">info@myhaizen.com</div>
+                        <div class="phone"><a href="tel:+974 303 77 121"><i class="fa-solid fa-phone-volume" style="color: #800000;"></i>+974 303 77 121</a></a></div>
+                        <div class="phone"><a href="mailto:Raad@promedqa.com"><i class="fa-solid fa-envelope" style="color: #800000;"></i>Raad@promedqa.com</a></div>
                     </div>
-                    <div class="details_right"></div>
+                    <div class="details_right">
+                        <span class="details_right_icon"><a href="#"><i class="fa-brands fa-twitter" style="color: #800000;"></i></a></span>
+                        <span class="details_right_icon"><a href="#"><i class="fa-brands fa-discord" style="color: #800000;"></i></a></span>
+                        <span class="details_right_icon"><a href="#"><i class="fa-brands fa-telegram" style="color: #800000;"></i></a></span>
+                    </div>
                 </div>
             </div>
        </div>
@@ -373,6 +519,9 @@
 
 <!-- --------------- footer section ends--------------------- -->
 
+<!-------------------- click to top --------- -->
+
+<a href="#hero_carousel" class="click_top" id="click_top"><i class="fa-solid fa-arrow-up-long"></i></a>
     
 
 
@@ -381,6 +530,9 @@
 
 <!-- ------------ font awesome ------------------ -->
 <script src="https://kit.fontawesome.com/91f2082c15.js" crossorigin="anonymous"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
 <!-- ----------------- Custom JS ------------------ -->

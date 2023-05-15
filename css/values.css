@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    transition: 0.2s linear;
+    border: none;
+    outline: none;
+    overflow-x: none;
+  }
+  
+  .main_color{
+    color: #800000;
+  }
+
+  .secondry_color{
+    color: #e6b641;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+   /* ----------- about section starts ------------- */
+
+   .service_first{  
+    background: linear-gradient(rgba(27, 25, 25, 0.7), rgba(31, 30, 30, 0.7)),url('https://haizen.web.app/static/media/serivehero.988b1df09f1e9d67d5d3.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    width: 100%;
+    margin-top: 8rem;
+  }
+
+  .service_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service_text_container{
+    
+    width: 60%;
+  }
+
+  .service_text_container h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+
+  .service_text_container p{
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+
+
+  
+  /* ------------------- Planning -------------- */
+
+
+  .planning{
+    padding: 10rem 0;
+  }
+
+  
+
+  .planning-img{
+    padding-right: 8rem;
+    max-width: 48rem;
+  }
+
+  .planning_left_container{
+
+      display: flex;
+      align-items: center;
+  }
+
+  .planning-left{
+    padding-left: 8rem;
+  }
+
+ .planning-left h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+    
+  }
+
+  .planning-para-box p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 1.5rem 0;
+  } 
+
+
+  .btn_box{
+    padding-right: 1.5rem;
+  }
+
+
+  .btn_box ul li{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .planning-img{
+    padding-left: 4rem;
+  }
+
+  .planning-img img{
+    max-height: 45.1rem;
+  }
+
+  /* -------------------------------- */
+
+  .planning_right_container{
+
+    display: flex;
+    align-items: center;
+}
+
+.planning-right{
+  padding-left: 4rem; 
+}
+
+.planning-right h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.facility-img{
+    padding-left: 4rem;
+}
+
+.facility-img img{
+    max-width: 45.1rem;
+}
+

@@ -10,9 +10,12 @@
   }
   
   .main_color{
-    color: #e6b641;
+    color: #800000;
   }
   
+  .secondry_color{
+    color:#e6b641;
+  }
   html {
     font-size: 62.5%;
   }
@@ -29,10 +32,11 @@
     justify-content: center;
     height: 55vh;
     width: 100%;
+    margin-top: 8rem;
   }
 
   .about_text_container h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     color: white;
     position: relative;
@@ -53,7 +57,7 @@
   }
 
   .who_container h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     position: relative;
     text-align: center;
@@ -67,13 +71,170 @@
   }
 
   .para{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 160%;
     margin-bottom: 1rem;
   }
 
   .about_we_are{
-    max-width: 930px;
+    max-width: 93rem;
   }
 
+
+
+
+  /* -------------------------Gallery Carrousel starts -------------------- */
+
+  .gallery{
+    padding: 6rem 0;
+  }
+ 
+  .gallery_img{
+    max-height: 40rem;
+  }
+
+  .gallery_heading{
+    font-size: 4.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .product {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  
+  .product-category {
+    padding: 0 10vw;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+  }
+  
+  .product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    margin-right: 5px;
+  }
+  
+  .product-image{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient((rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)));
+    
+  }
+  
+  .product-image a{
+  height: 100%;
+  width: 100%;
+  }
+  
+  .product-image img{
+    width: 20.3vw;
+    
+  }
+
+  .product-image img:hover{
+    transform: scale(1.2);
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .card-btn {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .product-card:hover .card-btn {
+    opacity: 1;
+  }
+  
+  .card-btn:hover {
+    background: #800000;
+    color: #fff;
+  }
+  
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .pre-btn {
+    left: 2%;
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    background-color: transparent;
+    font-weight: 500;
+  }
+  
+  .nxt-btn {
+    right: 2%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    background-color: transparent;
+  }
+  
+  .pre-btn:hover, .nxt-btn:hover{
+    color: #800000;
+    
+  }
+  
+  
+  
+  .collection {
+    position: relative;
+  }
+  
+  .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+
+  /* -------------------------Carrousel ends -------------------- */

@@ -9,32 +9,107 @@
   overflow-x: none;
 }
 
+
 .main_color{
+  color: #800000;
+}
+
+.secondry_color{
   color: #e6b641;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  border-radius: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #800000;
+ 
+}
+
+.header{
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+.header:hover{
+  box-shadow: 0px 0px 1.8rem 0.6rem #e0d9d9;
+}
+
+.logo img{
+  max-width: 28rem;
+  cursor: pointer;
 }
 
 
+.menu_list{
+  position: absolute;
+  margin-top: 4rem;
+  
+  background-color: white;
+  font-size: 1.8rem;
+  padding: 0.8rem 0;
+  z-index: 100;
+  list-style: none;
+  display: none;
+}
+
+.display_block{
+  display: block;
+}
+
+.menu_list a{
+  color: black;
+  text-align: left;
+  display: block; 
+  padding: 0.5rem 5rem;
+
+}
+
+
+.menu_list a:hover{
+  background-color: #800000;
+  color: white;
+}
+
+
+.menu_logo_text{
+  margin: 0 2rem 0 1rem;
+  font-size: 2rem;
+  
+}
+
+.menu_items{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .nav {
-  padding: 1rem 4rem;
+  padding: 0rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 
-.logo img{
-  width: 22rem;
-  cursor: pointer;
-}
-
 .right{
   display: flex;
-  align-items: center;
+  align-items:baseline;
   justify-content: center;
 }
 
@@ -43,24 +118,25 @@ html {
   cursor: pointer;
 }
 
-.right span{
-  margin: 0 2rem 0 1rem;
-  font-size: 16px;
-}
+
 
 
 
 
 .contact_btn{
-  background: #e6b641;
-    border-radius: 8px;
+  background: #800000;
+    border-radius: 0.8rem;
     display: inline-block;
-    padding: 16px 28px;
+    padding: 1.6rem 2.8rem;
     transition: all .3s linear;
     color: white;
     font-size: 1.8rem;
 }
 
+.contact_btn:hover{
+  background: #b91818f9;
+  transform: scale(1.09);
+}
 
 .main_carousel{  
     background: url('https://haizen.web.app/static/media/hero_slider_2.d82957c043ce4509b645.png') no-repeat;
@@ -72,14 +148,33 @@ html {
     position: relative;
   }
 
-  .main_carousel h1{
+  .main_heading{
     position: absolute;
     left: 10%;
     bottom: 10%;
     color: white;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 5.6rem;
+    z-index: 500;
   }
+
+  .hero_carousel{
+    position: relative;
+    margin-bottom: 3rem;
+    /* height: 70vh; */
+    /* z-index: -20; */
+}
+
+.carousel-control-prev-icon{
+  color: red;
+}
+
+.carousel_img{
+ height: 100vh;
+ width: 100%;
+}
+
+
 
   .running_no{
     padding: 4.5rem 0;
@@ -97,17 +192,17 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 156px;
-    width: 172px;
+    height: 15.6rem;
+    width: 17.2rem;
     margin: 0 1.5rem;
     background: #fafafa;
     cursor: pointer;
-
+    border-radius: 1rem;
     text-align: center;
   }
 
   .box:hover{
-    box-shadow: 0px 0px 18px 6px #e0d9d9;
+    box-shadow: 0px 0px 1.8rem 0.6rem #e0d9d9;
   }
 
 
@@ -118,11 +213,12 @@ html {
   }
 
   .about-img img{
-   height: 467px;
+   height: 46.7rem;
+   border-radius: 0.7rem;
   }
 
   .about-right h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     position: relative;
   }
@@ -131,9 +227,9 @@ html {
     width: 50%;
 }
 .about-right h1:after {
-    border: 1px solid #e5b641;
+    border: 1px solid #800000;
     content: "";
-    margin-left: 10px;
+    margin-left: 1rem;
     position: absolute;
     top: 50%;
     width: 60%;
@@ -144,7 +240,7 @@ html {
   }
 
   .para-box p{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 160%;
   }
@@ -155,14 +251,15 @@ html {
 
   .mission{
     padding: 10rem 0;
-    background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
+    /* background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
     background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  box-shadow: 0px 0px 0.6rem 0.1rem #e0d9d9;
   }
 
   .mission-img img{
-   height: 467px;
+   height: 46.7rem;
   }
 
   .mission-left{
@@ -170,9 +267,9 @@ html {
   }
 
   .mission-left h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
-    color: white;
+    /* color: #800000; */
     position: relative;
   }
 
@@ -181,10 +278,10 @@ html {
   }
 
   .about-para-box p{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 160%;
-    color: white;
+    /* color: white; */
   }
 
   .mission-left h1:after {
@@ -192,9 +289,9 @@ html {
     
 }
 .mission-left h1:after {
-    border: 1px solid #e5b641;
+    border: 1px solid #800000;
     content: "";
-    margin-left: 10px;
+    margin-left: 1rem;
     position: absolute;
     top: 50%;
     width: 29%;
@@ -212,7 +309,7 @@ html {
 
 .values .container h1{
   text-align: center;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 700;
   
 }
@@ -223,37 +320,37 @@ html {
 
 .vcard{
   padding: 3rem ;
-  max-width: 367px;
+  max-width: 36.7rem;
   height: 100%;
   border-radius: 1.2rem;
 }
 
 .vcard:hover{
-  box-shadow: 0px 0px 18px 6px #e0d9d9;
+  box-shadow: 0px 0px 1.8rem 0.6rem #e0d9d9;
   transform: scale(1.08);
 }
 
 
 
 .vcard img{
-  width: 86px;
+  width: 8.6rem;
   margin: 1rem 0;
 }
 
 .vcard h2{
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
 
 }
 .vcard h3{
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.8;
 }
 .vcard p{
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -276,7 +373,7 @@ html {
 .quote-body p{
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
   padding: 4rem;
   border: 1px solid #e5b641;
@@ -292,7 +389,7 @@ html {
 }
 
 .team-img img{
- height: 467px;
+ height: 46.7rem;
 }
 
 .team-left{
@@ -300,7 +397,7 @@ html {
 }
 
 .team-left h1{
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 700;
   position: relative;
 }
@@ -310,7 +407,7 @@ html {
 }
 
 .team-para-box p{
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 160%;
 }
@@ -320,9 +417,9 @@ html {
   
 }
 .team-left h1:after {
-  border: 1px solid #e5b641;
+  border: 1px solid #800000;
   content: "";
-  margin-left: 10px;
+  margin-left: 1rem;
   position: absolute;
   top: 53%;
   width: 29%;
@@ -338,7 +435,7 @@ padding: 4rem;
 }
 
 .team-para-box p{
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 160%;
 }
@@ -346,6 +443,29 @@ padding: 4rem;
 
 /* ---------------- service -------------- */
 
+.services{
+  padding: 6rem 0;
+  box-shadow: 0px 0px 0.6rem 0.1rem #e0d9d9;
+  /* background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp'); */
+}
+
+.service_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_main_heading h1{
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #800000;
+  margin-left: 1.8rem;
+}
+.service_para p{
+  font-size: 1.5rem;
+  /* color: white; */
+  
+}
 
 /* ------------------ Projects ---------------- */
 
@@ -361,7 +481,7 @@ padding: 4rem;
 }
 
 .project_left h1{
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 700;
   position: relative;
 }
@@ -390,9 +510,9 @@ padding: 4rem;
   
 }
 .project_left h1:after {
-  border: 1px solid #e5b641;
+  border: 1px solid #800000;
   content: "";
-  margin-left: 10px;
+  margin-left: 1rem;
   position: absolute;
   top: 50%;
   width: 29%;
@@ -404,16 +524,18 @@ padding: 4rem;
 
 .operate{
   padding: 7rem 0;
-  background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat ;
+  box-shadow: 0px 0px 0.6rem 0.1rem #e0d9d9;
+  /* background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat ;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .operate-img img{
  height: 54.4rem;
  width: 100%;
 }
+
 
 .operate-left{
   padding: 4rem;
@@ -423,16 +545,16 @@ padding: 4rem;
 
 
 .operate-left h1{
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 700;
-  color: white;
+  /* color: white; */
   position: relative;
 }
 
 .operate-left h2{
   font-size: 2.4rem;
   font-weight: 700;
-  color: white;
+  /* color: white; */
   margin: 1.5rem 0 2rem 0;
 }
 
@@ -443,10 +565,10 @@ padding: 4rem;
 
 
 .operate-para-box p{
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 160%;
-  color: white;
+  /* color: white; */
 }
 
 
@@ -466,7 +588,7 @@ padding: 4rem;
 
 
 .ul li{
-  color: white;
+  /* color: white; */
   list-style: none;
   font-size: 1.5rem;
   margin: 1.5rem 0;
@@ -489,12 +611,12 @@ padding: 4rem;
 
 .contact_box{
   background: rgba(0,0,0,.6);
-  border-radius: 15px;
-  padding: 32px 18px;
+  border-radius: 1.5rem;
+  padding: 3.2rem 1.8rem;
 }
 
 .contact_box h1{
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 700;
   color: white;
   position: relative;
@@ -502,8 +624,8 @@ padding: 4rem;
 }
 
 .input_div{
-  width: 237px;
-  height: 47px;
+  width: 23.7rem;
+  height: 4.7rem;
   margin: 1.5rem 0;
 }
 
@@ -527,10 +649,10 @@ padding: 4rem;
 }
 
 .send_now{
-  background: #e6b641;
+  background: #800000;
     border-radius: 8px;
     display: inline-block;
-    padding: 16px 60px;
+    padding: 1.6rem 6rem;
     transition: all .3s linear;
     color: white;
     font-size: 1.8rem;
@@ -539,18 +661,13 @@ padding: 4rem;
 /* ------------------ footer ---------------- */
 
 .footer{
-  background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
+  padding: 1rem 0;
 }
 
 .footer p{
+  margin-left: 1.5rem;
   margin-top: 1rem;
-    color: white;
-  font-size: 16px;
+  font-size: 1.5rem;
    
     font-weight: 400;
     line-height: 160%;
@@ -559,7 +676,7 @@ padding: 4rem;
 }
 
 .line{
-  border: 1px solid #e6b641;
+  border: 1px solid #800000;
 }
 
 .footer_row{
@@ -569,7 +686,7 @@ padding: 4rem;
 }
 
 .footer h3{
-  color: #fff;
+  /* color: #fff; */
   justify-content: center;
   display: flex;
   align-items:center;
@@ -580,8 +697,243 @@ padding: 4rem;
 
 
 .phone{
-  color: white;
   list-style: none;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin: 1.5rem 0;
+}
+
+.phone a {
+  color: black;
+}
+
+.phone a i{
+  font-size: 2.2rem;
+  margin: 0 0.8rem;
+}
+
+.phone a i:hover{
+  transform: scale(1.2);
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details_right_icon{
+  display: block;
+}
+
+
+.details_right_icon i{
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.details_right_icon i:hover{
+  transform: scale(1.2);
+}
+
+
+/* ------------------- click to top --------- */
+
+.click_top{  
+  background-color: #800000;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  border-radius: 50%;
+  padding: 1.5rem 1.8rem;
+
+  display: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+
+  animation: up-down 2.5s ease-in-out infinite;
+  
+}
+
+@keyframes up-down {
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+}
+
+.click_top:hover{
+  box-shadow: 0px 0px 1rem 0.2rem #a11010;
+  background-color: #9e0a0a;
+}
+
+.click_top i{
+  font-size: 2.4rem;
+  color: white;
+  font-weight: 700;
+}
+
+
+
+
+/* ---------------- Swiper ------------------- */
+
+/* ######################################### */
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 10;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #800000;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #800000;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  /* height: 150px;
+  width: 150px; */
+  border-radius: 50%;
+  /* background: #FFF; */
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  border: 4px solid #800000;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #800000;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #b72424;
+}
+
+.swiper-navBtn{
+  color: #800000;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #800000;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #800000;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #800000;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+/* ######################################### */
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------- */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: 8rem;
+  }
+  .home h3 {
+    font-size: 4rem;
+  }
+  section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
 }

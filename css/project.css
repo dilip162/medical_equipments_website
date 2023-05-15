@@ -29,6 +29,7 @@
     justify-content: center;
     height: 55vh;
     width: 100%;
+    margin-top: 8rem;
   }
 
   .service_container{
@@ -43,7 +44,7 @@
   }
 
   .service_text_container h1{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     color: white;
     position: relative;
@@ -90,10 +91,10 @@
   }
 
   .inner_text{
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(.4rem);
     background: hsla(0,0%,100%,.81);
-    border-radius: 2px;
-    padding: 20px 50px;
+    border-radius: 0.2rem;
+    padding: 2rem 5rem;
     position: absolute;
     bottom: 0;
     right: 0;
