@@ -10,11 +10,11 @@
   }
   
   .main_color{
-    color: #800000;
+    color: #800020;
   }
 
   .secondry_color{
-    color: #e6b641;
+    color: #800020;
   }
   
   html {
@@ -24,15 +24,16 @@
    /* ----------- about section starts ------------- */
 
    .service_first{  
-    background: linear-gradient(rgba(27, 25, 25, 0.7), rgba(31, 30, 30, 0.7)),url('https://haizen.web.app/static/media/serivehero.988b1df09f1e9d67d5d3.png') no-repeat;
+    background:url('/pics/bg3.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55vh;
+    height: 100%;
     width: 100%;
+    padding: 8rem;
     margin-top: 8rem;
   }
 
@@ -50,14 +51,14 @@
   .service_text_container h1{
     font-size: 4.8rem;
     font-weight: 700;
-    color: white;
+    /* color: white; */
     position: relative;
     text-align: center;
   }
 
   .service_text_container p{
-    color: white;
-    font-size: 1.8rem;
+    /* color: white; */
+    font-size: 2rem;
     margin-top: 1.5rem;
     text-align: center;
     line-height: 1.8;
@@ -76,8 +77,8 @@
   
 
   .planning-img{
-    padding-right: 8rem;
-    max-width: 48rem;
+    /* padding-right: 8rem; */
+    max-height: 40rem;
   }
 
   .planning_left_container{
@@ -119,7 +120,7 @@
   }
 
   .planning-img img{
-    max-height: 45.1rem;
+    max-height: 40.1rem;
   }
 
   /* -------------------------------- */
@@ -144,6 +145,66 @@
 }
 
 .facility-img img{
-    max-width: 45.1rem;
+    max-height: 40.1rem;
 }
 
+.facility-row{
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+
+
+  
+/* --------------------------- --------------------- */
+
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: 8rem;
+    
+  }
+
+  .service_first{
+    padding: 1.5rem 0;
+  }
+
+  .service_text_container{
+    width: 95%;
+  }
+
+  .planning-left, .facility-img, .planning-right{
+    padding-left: unset;
+  }
+
+  .planning-img, .facility-img img{
+    padding-left: unset;
+    padding-right: unset;
+    max-width: unset;
+  }
+
+
+  .planning{
+    padding: 0.5rem 0;
+  }
+
+  .planning-para-box p{
+    font-size: 2.8rem;
+  }
+
+  .btn_box ul li{
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 786px){
+  
+
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+
+}

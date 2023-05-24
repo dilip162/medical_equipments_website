@@ -1,36 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none !important;
     transition: 0.2s linear;
-    border: none;
-    outline: none;
+    /* border: none;
+    outline: none; */
     overflow-x: none;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .main_color{
-    color: #800000;
+    color: #800020;
   }
   .secondry_color{
-    color: #e6b641;
+    color: #800020;
   }
   
   html {
     font-size: 62.5%;
   }
 
+
+  .product_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
    /* ----------- about section starts ------------- */
 
    .service_first{  
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url('https://haizen.web.app/static/media/serivehero.988b1df09f1e9d67d5d3.png') no-repeat;
+    background:url('/pics/bg3.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55vh;
+    padding: 6rem 0;
+    height: 100%;
     width: 100%;
     margin-top: 8rem;
   }
@@ -49,14 +60,12 @@
   .service_text_container h1{
     font-size: 4.8rem;
     font-weight: 700;
-    color: white;
     position: relative;
     text-align: center;
   }
 
   .service_text_container p{
-    color: white;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-top: 1.5rem;
     text-align: center;
     line-height: 1.8;
@@ -117,7 +126,7 @@
 
   .planning{
     padding: 10rem 0;
-    background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
+    /* background: url('/pics/bg2.jpg') no-repeat; */
     background-size: cover;
     background-position: center;
   }
@@ -125,8 +134,8 @@
   
 
   .planning-img{
-    padding-right: 8rem;
-    max-width: 48rem;
+    /* padding-right: 8rem; */
+    max-height: 48rem;
   }
 
   .planning_left_container{
@@ -142,7 +151,7 @@
  .planning-left h1{
     font-size: 4.8rem;
     font-weight: 700;
-    color: white;
+    /* color: white; */
     
   }
 
@@ -151,7 +160,7 @@
     font-weight: 400;
     line-height: 160%;
     margin: 2rem 0;
-    color: white;
+    /* color: white; */
   } 
 
 
@@ -183,7 +192,7 @@
   
 
   .facility-img{
-    padding-left: 10rem;
+    /* padding-left: 2rem; */
     max-width: 48rem;
   }
 
@@ -228,15 +237,15 @@
   
   .comission{
     padding: 10rem 0;
-    background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+    /* background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat; */
+    /* background-size: cover;
+    background-position: center;*/
+  } 
 
   
 
   .comission-img{
-    padding-left: 6rem;
+    /* padding-left: 6rem; */
     max-width: 48rem;
   }
 
@@ -244,6 +253,7 @@
 
       display: flex;
       align-items: center;
+      order: 1;
   }
 
   .comission-left{
@@ -253,7 +263,7 @@
  .comission-left h1{
     font-size: 4.8rem;
     font-weight: 700;
-    color: white;
+    /* color: white; */
     
   }
 
@@ -262,7 +272,7 @@
     font-weight: 400;
     line-height: 160%;
     margin: 2rem 0;
-    color: white;
+    /* color: white; */
   } 
 
 
@@ -283,9 +293,229 @@
     font-size: 1.6rem;
   }
 
+  /* --------------- medical ---------------- */
+
+  .medical{
+    padding: 6rem 0;
+  }
+
+
+  .medical_heading{
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .icons_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    /* background: whitesmoke; */
+    padding: 2.5rem 0;
+    border-radius: 0.6rem;
+  }
+
+  .icon{
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .icon img{
+    height: 12.8rem;
+    width: 12.8rem;
+  }
+  
+  .icon:hover{
+    
+    box-shadow: 0px 0px 1.8rem 0.6rem #e0d9d9;
+  }
+
+/* ------------------- contact ----------------- */
+
+  .service_form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+
+  .input_container{
+    width: 70%;
+    margin: 0.7rem 0;
+  }
+
+  .input_container label{
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
+
+  .input_field input,textarea{
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+  }
+
+  
+  .service_btn{
+    background: var(--hero_color);
+    border-radius: 0.8rem;
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    transition: all .3s linear;
+    color: white;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    width: 30%;
+  }
+
+  .service_btn:hover{
+    background: #dd1d4d;
+  }
+
+  .service_btn:active{
+    transform: scale(1.2);
+  }
+
+
+
   /* ------------- Engineering section (Style Copy from facility) -------------- */
   /* ------------- Guidance section (Style Copy from Commission) -------------- */
   /* ------------- Financial section (Style Copy from Engineering) -------------- */
 
 
 
+/* --------------------------- --------------------- */
+@media (max-width: 992px){
+
+  html {
+    font-size: 55%;
+    scroll-padding-top: 8rem;
+    
+  }
+
+  .medical_heading{
+    font-size: 3.8rem;
+  }
+
+  /* .row>*{
+    width: 100%;
+  } */
+
+  .projectc-right, .planning-left, .facility-right, .comission-left{
+    padding-right: unset;
+    padding-bottom: 4rem;
+  }
+
+  .planning-left, .facility-img, .comission-left, .comission-img{
+    padding-left: unset;
+  }
+
+  .planning, .comission{
+    padding: unset;
+  }
+
+  .planning-img, .facility-img, .comission-img{
+    max-width: 100%;
+    padding-right: unset;
+  }
+
+  .product_row, .facility{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  .projectc{
+    padding: unset;
+  }
+
+  .projectc-img{
+    width: 100%;
+    padding-left: unset;
+    max-width: 100%;
+  }
+
+  .comission-para-box p, .pc-para-box{
+    font-size: unset;
+  }
+
+  .pc-para-box p, .planning-para-box p, .comission-para-box{
+    font-size: 2rem;
+  }
+
+  .comission-left h1, .facility-right h1{
+    font-size: 3.8rem;
+  }
+
+  .projectc-right h1{
+    font-size: 3rem;
+  }
+
+  .service_text_container p{
+    font-size: 1.5rem;
+  }
+
+  .service_text_container{
+    width: 90%;
+  }
+
+  .btn_box {
+    gap: 0.8;
+  }
+
+
+  .link-btns {
+    
+    padding: 0.8rem;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+}
+
+@media (max-width:768px) {
+  .input_container{
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px){
+  .about_text_container h1{
+    font-size: 3rem;
+  }
+
+  .form_heading {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: unset;
+}
+
+ 
+}
+
+
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+
+  .icon img{
+    height: 7rem;
+    width: 7rem;
+  }
+
+
+}
+
+@media (max-width: 350px){
+  
+}

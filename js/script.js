@@ -6,6 +6,12 @@ menu_img.addEventListener('click',()=>{
     
 })
 
+
+
+window.onscroll = () =>{
+  menu_list.classList.remove('display_block')
+}
+
 // -------------- click to top -------------------
 
 let mybutton = document.getElementById("click_top");

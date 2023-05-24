@@ -4,14 +4,17 @@
   box-sizing: border-box;
   text-decoration: none !important;
   transition: 0.2s linear;
-  border: none;
-  outline: none;
-  overflow-x: none;
+  /* border: none;
+  outline: none; */
+}
+
+:root{
+  --hero_color:#800020
 }
 
 
 .main_color{
-  color: #800000;
+  color: var(--hero_color);
 }
 
 .secondry_color{
@@ -33,9 +36,12 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #800000;
+  background: var(--hero_color);
  
 }
+
+
+/* ---------------------------------------- */
 
 .header{
   padding: 0.5rem 0;
@@ -44,6 +50,7 @@ html::-webkit-scrollbar-thumb {
   width: 100%;
   z-index: 1000;
   background-color: white;
+  
 }
 
 .header:hover{
@@ -66,23 +73,27 @@ html::-webkit-scrollbar-thumb {
   z-index: 100;
   list-style: none;
   display: none;
+  border-radius: 1rem;
+  transition: 0.5s ease-in-out;
 }
 
 .display_block{
   display: block;
 }
 
-.menu_list a{
+.menu_btn{
   color: black;
   text-align: left;
   display: block; 
   padding: 0.5rem 5rem;
+  
+ 
 
 }
 
 
-.menu_list a:hover{
-  background-color: #800000;
+.menu_btn:hover{
+  background-color: var(--hero_color);
   color: white;
 }
 
@@ -91,6 +102,27 @@ html::-webkit-scrollbar-thumb {
   margin: 0 2rem 0 1rem;
   font-size: 2rem;
   
+}
+
+.carousel-item{
+  background: linear-gradient(rgba(0,0,0,0.7));
+}
+
+.list_contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide{
+   display: none;
+    background: var(--hero_color);
+    border-radius: 0.8rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    transition: all .3s linear;
+    color: white;
+    font-size: 1.8rem;
 }
 
 .menu_items{
@@ -124,7 +156,7 @@ html::-webkit-scrollbar-thumb {
 
 
 .contact_btn{
-  background: #800000;
+  background: var(--hero_color);
     border-radius: 0.8rem;
     display: inline-block;
     padding: 1.6rem 2.8rem;
@@ -159,19 +191,20 @@ html::-webkit-scrollbar-thumb {
   }
 
   .hero_carousel{
-    position: relative;
+    
     margin-bottom: 3rem;
     /* height: 70vh; */
     /* z-index: -20; */
 }
 
 .carousel-control-prev-icon{
-  color: red;
+  color: var(--hero_color);
 }
 
 .carousel_img{
  height: 100vh;
  width: 100%;
+ position: relative;
 }
 
 
@@ -184,6 +217,8 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
     
   }
 
@@ -213,7 +248,8 @@ html::-webkit-scrollbar-thumb {
   }
 
   .about-img img{
-   height: 46.7rem;
+   max-height: 40rem;
+   /* width: 100%; */
    border-radius: 0.7rem;
   }
 
@@ -223,11 +259,8 @@ html::-webkit-scrollbar-thumb {
     position: relative;
   }
 
-  .about-right h1:after {
-    width: 50%;
-}
 .about-right h1:after {
-    border: 1px solid #800000;
+    border: 1px solid var(--hero_color);
     content: "";
     margin-left: 1rem;
     position: absolute;
@@ -251,10 +284,6 @@ html::-webkit-scrollbar-thumb {
 
   .mission{
     padding: 10rem 0;
-    /* background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
-    background-size: cover;
-  background-position: center;
-  background-attachment: fixed; */
   box-shadow: 0px 0px 0.6rem 0.1rem #e0d9d9;
   }
 
@@ -269,7 +298,7 @@ html::-webkit-scrollbar-thumb {
   .mission-left h1{
     font-size: 4.8rem;
     font-weight: 700;
-    /* color: #800000; */
+    /* color: var(--hero_color); */
     position: relative;
   }
 
@@ -289,7 +318,7 @@ html::-webkit-scrollbar-thumb {
     
 }
 .mission-left h1:after {
-    border: 1px solid #800000;
+    border: 1px solid var(--hero_color);
     content: "";
     margin-left: 1rem;
     position: absolute;
@@ -303,15 +332,15 @@ html::-webkit-scrollbar-thumb {
 
 /* ----------------------- Values ------------------ */
 
-.values{
-  padding: 8rem 0;
-}
 
 .values .container h1{
-  text-align: center;
   font-size: 4.8rem;
   font-weight: 700;
   
+}
+
+.values{
+  margin-top: 4rem;
 }
 
 .vcard_container{
@@ -359,9 +388,9 @@ html::-webkit-scrollbar-thumb {
 /* --------------- quote ---------------- */
 
 .quote{
-  height: 70vh;
+  padding: 6rem 0;
   width: 100%;
-  background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat;
+  background: url('/pics/bg3.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -371,12 +400,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 .quote-body p{
-  color: white;
+  /* color: white; */
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
   padding: 4rem;
-  border: 1px solid #e5b641;
+  border: 3px solid #800020;
  
 }
 
@@ -386,10 +415,6 @@ html::-webkit-scrollbar-thumb {
 
 .team{
   padding: 6rem 0;
-}
-
-.team-img img{
- height: 46.7rem;
 }
 
 .team-left{
@@ -417,7 +442,7 @@ html::-webkit-scrollbar-thumb {
   
 }
 .team-left h1:after {
-  border: 1px solid #800000;
+  border: 1px solid var(--hero_color);
   content: "";
   margin-left: 1rem;
   position: absolute;
@@ -452,13 +477,13 @@ padding: 4rem;
 .service_container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .service_main_heading h1{
   font-size: 4.8rem;
   font-weight: 700;
-  color: #800000;
+  color: var(--hero_color);
   margin-left: 1.8rem;
 }
 .service_para p{
@@ -499,6 +524,7 @@ padding: 4rem;
   
 }
 
+
 .project_left_img,.project_left_img a,
 .project_right_img,.project_right_img a{
   margin: 3rem 0;
@@ -510,7 +536,7 @@ padding: 4rem;
   
 }
 .project_left h1:after {
-  border: 1px solid #800000;
+  border: 1px solid var(--hero_color);
   content: "";
   margin-left: 1rem;
   position: absolute;
@@ -525,14 +551,10 @@ padding: 4rem;
 .operate{
   padding: 7rem 0;
   box-shadow: 0px 0px 0.6rem 0.1rem #e0d9d9;
-  /* background: url('https://haizen.web.app/static/media/mission-bg.4d3e3b8c52e927d2e0c6.webp') no-repeat ;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; */
 }
 
 .operate-img img{
- height: 54.4rem;
+ /* height: 54.4rem; */
  width: 100%;
 }
 
@@ -547,14 +569,12 @@ padding: 4rem;
 .operate-left h1{
   font-size: 4.8rem;
   font-weight: 700;
-  /* color: white; */
   position: relative;
 }
 
 .operate-left h2{
   font-size: 2.4rem;
   font-weight: 700;
-  /* color: white; */
   margin: 1.5rem 0 2rem 0;
 }
 
@@ -568,7 +588,6 @@ padding: 4rem;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 160%;
-  /* color: white; */
 }
 
 
@@ -588,80 +607,71 @@ padding: 4rem;
 
 
 .ul li{
-  /* color: white; */
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 1.5rem 0;
+  font-weight: 600;
 }
 
 
 /* ---------------- contact ----------- */
 
 .contact{
-  height: 70vh;
-  width: 100%;
-  background: url('https://haizen.web.app/static/media/conatct_us.c17be969b7572cb572fb.png') ;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  padding: 4rem 0;
+  box-shadow: 0px 0px 0.6rem 0.6rem #efeaea;
+}
+
+.form_heading{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.input_div{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.contact_box{
-  background: rgba(0,0,0,.6);
-  border-radius: 1.5rem;
-  padding: 3.2rem 1.8rem;
-}
-
-.contact_box h1{
-  font-size: 4.8rem;
-  font-weight: 700;
-  color: white;
-  position: relative;
-  text-align: center;
-}
-
-.input_div{
-  width: 23.7rem;
-  height: 4.7rem;
   margin: 1.5rem 0;
 }
 
 .input{
-  border: 2px solid rgb(117, 114, 114);
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  padding: 0.2rem 1rem;
-  font-size: 1.8rem;
-  color: rgb(194, 186, 186);
-  font-weight: 400;
-  line-height: 1.5;
-  border-radius: 4px;
+  width: 70%;
+  padding: 1rem 1.5rem;
+font-size: 1.8rem;
+border-radius: 0.5rem;
+border: 0.1rem solid var(--hero_color);
+}
 
+textarea{
+  resize: none;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
 }
 
 .send_btn{
-  display: flex;
-  justify-content: center;
-}
-
-.send_now{
-  background: #800000;
-    border-radius: 8px;
+    background: var(--hero_color);
+    border-radius: 0.8rem;
     display: inline-block;
-    padding: 1.6rem 6rem;
+    padding: 1.2rem 2.8rem;
     transition: all .3s linear;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    width: 30%;
+}
+
+.send_btn:hover{
+  background-color: #851313;
+  transform: scale(1.1);
 }
 
 /* ------------------ footer ---------------- */
 
 .footer{
-  padding: 1rem 0;
+  padding: 3rem 0;
+  position: relative;
 }
 
 .footer p{
@@ -676,7 +686,7 @@ padding: 4rem;
 }
 
 .line{
-  border: 1px solid #800000;
+  border: 1px solid var(--hero_color);
 }
 
 .footer_row{
@@ -686,11 +696,16 @@ padding: 4rem;
 }
 
 .footer h3{
-  /* color: #fff; */
   justify-content: center;
   display: flex;
   align-items:center;
   
+}
+
+.copyright{
+ position: absolute;
+ left: 40%;
+ bottom: 1%;
 }
 
 
@@ -706,12 +721,12 @@ padding: 4rem;
   color: black;
 }
 
-.phone a i{
+.phone i{
   font-size: 2.2rem;
   margin: 0 0.8rem;
 }
 
-.phone a i:hover{
+.phone i:hover{
   transform: scale(1.2);
 }
 
@@ -728,7 +743,7 @@ padding: 4rem;
 
 .details_right_icon i{
   font-size: 1.8rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .details_right_icon i:hover{
@@ -739,7 +754,7 @@ padding: 4rem;
 /* ------------------- click to top --------- */
 
 .click_top{  
-  background-color: #800000;
+  background-color: var(--hero_color);
   position: fixed;
   bottom: 5%;
   right: 2%;
@@ -778,6 +793,7 @@ padding: 4rem;
 
 
 
+
 /* ---------------- Swiper ------------------- */
 
 /* ######################################### */
@@ -796,6 +812,7 @@ padding: 4rem;
   border-radius: 25px;
   background-color: #FFF;
 }
+
 .image-content,
 .card-content{
   display: flex;
@@ -814,7 +831,7 @@ padding: 4rem;
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #800000;
+  background-color: var(--hero_color);
   border-radius: 25px 25px 0 25px;
 }
 .overlay::before,
@@ -825,7 +842,7 @@ padding: 4rem;
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #800000;
+  background-color: var(--hero_color);
 }
 .overlay::after{
   border-radius: 0 25px 0 0;
@@ -844,7 +861,7 @@ padding: 4rem;
   width: 100%;
   object-fit: cover;
   /* border-radius: 50%; */
-  border: 4px solid #800000;
+  border: 4px solid var(--hero_color);
 }
 .name{
   font-size: 18px;
@@ -861,7 +878,7 @@ padding: 4rem;
   font-size: 16px;
   color: #FFF;
   padding: 8px 16px;
-  background-color: #800000;
+  background-color: var(--hero_color);
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
@@ -872,11 +889,11 @@ padding: 4rem;
 }
 
 .swiper-navBtn{
-  color: #800000;
+  color: var(--hero_color);
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-  color: #800000;
+  color: var(--hero_color);
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after{
@@ -889,11 +906,11 @@ padding: 4rem;
   left: 0;
 }
 .swiper-pagination-bullet{
-  background-color: #800000;
+  background-color: var(--hero_color);
   opacity: 1;
 }
 .swiper-pagination-bullet-active{
-  background-color: #800000;
+  background-color: var(--hero_color);
 }
 
 @media screen and (max-width: 768px) {
@@ -919,10 +936,68 @@ padding: 4rem;
 
 /* -------------------------- */
 
-@media (max-width: 991px) {
+@media (max-width: 1400px){
+  .mission-left h1:after{
+    display: none;
+  }
+}
+
+@media (max-width: 1200px){
+  .mission-left {
+    padding: 4rem 0;
+  }
+}
+
+
+
+@media (max-width: 992px) {
   html {
     font-size: 55%;
     scroll-padding-top: 8rem;
+    
+  }.hero_carousel{
+    margin-bottom: unset;
+  }
+  
+  .footer_left p{
+    font-size: 2rem;
+  }
+
+
+  .about-img {
+    padding: unset;
+  }
+
+ 
+
+  .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .details_right_icon {
+    display: unset;
+    margin: 0 2rem;
+}
+
+  .main_heading {
+    font-size: 3.6rem;
+}
+
+.input{
+  width: 85%;
+  padding: 1rem 1.5rem;
+  font-size: 2.5rem;
+}
+
+.input:active{
+  border-color: #800020;
+}
+
+  .nav {
+    padding: 0;
   }
   .home h3 {
     font-size: 4rem;
@@ -932,8 +1007,185 @@ padding: 4rem;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px){
+  .row{
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    /* flex-wrap: wrap; */
+  }
+
+
+  .about-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project_left,
+  .project_right{
+    padding: 0rem;
+  }
+
+  .carousel-item, .carousel_img{
+    height: 60vh;
+  }
+
+  .main_heading{
+    left: 10%;
+    bottom: 40%;
+    font-size: 3rem;
+  }
+  
+
+  .para-box, .about-para-box, .team-para-box {
+    padding: 0.5rem 0.5rem;
+}
+
+.mission {
+  padding: unset;
+}
+
+.mission-left, .team-left, .quote, .services, .operate, .operate-left, .about,.vcard, .running_no {
+  padding: 2.5rem 1rem;
+}
+
+.values{
+  padding-top: 4rem;
+}
+.vcard_container{
+  padding:0;
+}
+
+.team-left h1:after, .project_left h1, .about-right h1:after{
+  display: none;
+}
+
+
+.quote{
+  background-size: unset;
+}
+
+.quote-body p{
+  font-size: 2.5rem;
+}
+
+.service_main_heading h1{
+  margin-left: unset;
+}
+
+
+.service_para p{
+  font-size: 1.8rem;
+}
+
+
+  .team-img{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .team-img img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo img{
+    max-width: 25rem;
+  }
+
+  .details {
+    
+    justify-content:left;
+    align-items: start;
+    
+}
+
+  .about-img{
+    padding: 0;
+  }
+
+  .about-img img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.box{
+  margin-bottom: unset;
+}
+
+}
+
+@media (max-width: 576px) {
+  .box{
+    height: 12rem;
+    width: 14rem;
+  }
+
+  .box{
+    margin: 1.5rem;
+  }
+
+
+
+
+  .click_top{
+    display: none;
+  }
+
+  .input{
+    width: 90%;
+  }
+
+  .send_btn{
+    
+      padding: 1rem 3rem;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+  }
+
+  .contact_btn{
+      padding: 1rem 1.8rem;
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
   html {
-    font-size: 50%;
+    font-size: 45%;
+  }
+
+  #click_top{
+    display: none;
+  }
+}
+
+@media (max-width: 420px){
+  
+
+  .menu_list {
+    border-radius: unset;
+    font-size: 2.5rem;
+    position: fixed;
+    right: 0;
+    top: 6%;
+  }
+
+ 
+
+  .hide{
+    display: block;
+    
+  }
+
+  .see{
+    display: none;
+  }
+  
+  .menu_btn{ 
+    padding: 0.5rem 1rem;
+    margin-right: 1.5rem;
+  
   }
 }
